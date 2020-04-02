@@ -8,6 +8,12 @@ font-size: 1rem;
 line-height: inherit;
 color: inherit;
 background-color: #fbf9f4;
+transition: all .2s ease-in;
+}
+
+.body-section.dark{
+  background-color: #282a36;
+  color: #f8f8f2;
 }
 h1, h2, h3, h4, h5, h6{
   line-height: 1.25;
@@ -61,7 +67,6 @@ h3 {
 }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px */
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
@@ -81,6 +86,7 @@ h3 {
 footer{
   margin-top: 10%;
   text-align: center;
+  margin-bottom: 4%;
 }
 footer .float-right{
   margin-right: 100px;
@@ -88,19 +94,22 @@ footer .float-right{
 .fa-chevron-up {
   color: rgba(0,0,0,.54);
 }
+.body-section.dark .fa-chevron-up {
+  color: rgba(255,255,255,.54);
+}
 
 
 /* Index Page */
 
 
-body#top{
+body.index-body{
   color: #333;
   font-size: 1rem;
 }
 .main-page{
   margin-top: 50px;
 }
-#top .row{
+.index-body .row{
   padding-top: 30px;
 }
 #profile  {
@@ -131,11 +140,17 @@ body#top{
   color: #333;
   margin: 20px 0 10px;
 }
+.body-section.dark .profile-title h2{
+  color: #fff;
+}
 .profile-title h3 {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(0,0,0,.54);
   margin: 0 0 10px;
+}
+.body-section.dark .profile-title h3{
+  color: rgba(255,255,255,.54);
 }
 .profile-title h3 a:hover, a:hover {
   text-decoration: underline;
@@ -338,6 +353,15 @@ a{
 .h-50 {
   height: 50% !important;
 }
+.about-body .card{
+  margin-bottom: 27px;
+}
+.about-body .card-body{
+  padding: 0.5rem;
+}
+.body-section.dark .card{
+  background: #343a40;
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
 }
@@ -346,10 +370,28 @@ a{
   font-weight: 700;
   line-height: 1.5;
 }
+.body-section.dark .card h4{
+  color: rgba(255,255,255,.8) !important;
+}
 .card h4 a {
   color: #000;
   border-bottom: solid 1px transparent;
   font-weight: 500;
+}
+.body-section.dark .card h4 a {
+  color: #e13d3d;
+  border-bottom: solid 1px transparent;
+}
+.body-section.dark .card h4 a:hover{
+  text-decoration: none;
+}
+.exp-meta{
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.body-section.dark .exp-meta{
+  color: rgba(255,255,255,.8) !important;
 }
 #experience .mini{
     text-align: left;
@@ -361,6 +403,9 @@ a{
   color: #333;
   font-weight: 400;
   font-size: 2rem;
+}
+.body-section.dark .section-heading{
+  color: #98a6ad;;
 }
 .btn-outline-primary {
   color: #e13d3d;
@@ -388,8 +433,21 @@ a{
   font-weight: 500;
   font-size: 1.1rem;
 }
-.fa-ul .fab{
+.about-body .fa-ul{
+  margin-left: 0;
+}
+.about-body .fa-ul li{
+  padding-top: .8rem;
+    margin-bottom: .3rem;
+}
+.about-body .fa-ul li a{
+  margin-left: 10px;
+}
+.about-body .fa-ul .fab{
   color: black;
+}
+.body-section.dark .fa-ul .fab{
+  color: #f8f8f2;
 }
 
 /* Posts Page */
@@ -417,6 +475,20 @@ section.media-body{
 .blog nav ul li a:hover{
   color: white;
   background-color: #d03b39;
+}
+.blog nav ul li a:focus {
+  z-index: 2;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
+}
+.body-section.dark .blog nav ul li a{
+  color: #f8f8f2;
+  background-color: #282a36;
+}
+.body-section.dark .blog nav ul li a:hover{
+  color: #f8f8f2;
+  background-color: #d03b39;
+  border: 1px solid #e13d3d;
 }
 .blog nav ul li a:focus{
 box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
@@ -450,10 +522,13 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
 .collections{
   margin-top: 150px;
 }
-.center-text{
+.collections .center-text{
   text-align: center;
   color: #333;
   font-weight: 400;
+}
+.body-section.dark .collections .center-text{
+  color: #98a6ad;
 }
 .collection-toolbar {
   margin-bottom: 2rem;
@@ -507,7 +582,6 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   text-overflow: ellipsis;
   background: #fff;
   border-radius: 0;
-  /* transition: all .2s ease-out; */
 }
 .collections .card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
@@ -567,9 +641,16 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   line-height: 1.5;
   text-transform: uppercase;
 }
-.card .card-text p {
+.body-section.dark .collections .card h5{
+  color: #e13d3d;
+    border-bottom: solid 1px transparent;
+}
+.collections .card .card-text p {
   color: rgba(0,0,0,.54);
-  font-size: .75rem;
+  font-size: 0.85rem;
+}
+.body-section.dark .collections .card .card-text p {
+  color: #f8f8f2;
 }
 @media only screen and (min-width: 1183px) {
 	.card-columns {
