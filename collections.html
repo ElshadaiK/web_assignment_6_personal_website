@@ -18,12 +18,15 @@
         <link rel="stylesheet" href="./assets/CSS/style.css">
     
     
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arapey:400,400i|Karla:400,700|Roboto+Mono">
+
     
     </head>
 <body class="body-section collections-body">
     <script src="./assets/jquery-3.4.1.js"></script>
     <script src="./assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="./assets/JS/dark-mode.js"></script>
+    <script src="./assets/JS/filter.js"></script>
     
     <header>
         <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
@@ -86,7 +89,7 @@
                             <section class="btn-toolbar">
                                 <section class="btn-group flex-wrap">
                                     <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-                                    <a href="#" id="bookz" data-filter=".js-id-books" class="btn btn-primary btn-lg">Books</a>
+                                    <a href="#" id="bookz" data-filter=".js-id-book" class="btn btn-primary btn-lg">Books</a>
                                     <a href="#" data-filter=".js-id-music" class="btn btn-primary btn-lg">Music</a>
                                     <a href="#" data-filter=".js-id-websites" class="btn btn-primary btn-lg">Websites</a>
                                     <a href="#" data-filter=".js-id-shows" class="btn btn-primary btn-lg">Shows</a>
@@ -306,19 +309,5 @@
         </p>
         
     </footer>
-    <!-- <script>
-        let btns = document.getElementById("bookz");
-        console.log(btns)
-        let filter = function() {
-            console.log('btnz clicked')
-            let selector = $(this).attr('data-filter');
-            $(".container").collectionsList({
-                filter: selector
-            });
-            $(this).removeClass('active').addClass('active').siblings().removeClass('active all');
-            return false;
-        };
-        btns.addEventListener('click', filter, false);
-    </script> -->
 </body>
 </html>
