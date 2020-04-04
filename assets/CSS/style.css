@@ -459,11 +459,10 @@ a{
 /* Posts Page */
 
 #posts img{
-  width: 10%;
+  width: 20%;
 }
 .blog{
   text-align: center;
-  width: 1000px;
   margin: 100px auto 0 auto;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -502,18 +501,46 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
 .topic-container{
   margin-top: 6.1%;
 }
+.topic-container-d{
+  margin-top: 7.4%;
+}
+.topic-container-d .featured-image5{
+  background-image: url('./../images/cocacola.jpg');
+  background-size: cover;
+  height: 400px;
+}
+.topic-container-d .featured-image4{
+  background-image: url('./../images/pull_push.jpg');
+  background-size: cover;
+  height: 400px;
+}
+.topic-container-d .featured-image3{
+  background-image: url('./../images/mic2.jpg');
+  background-size: cover;
+  height: 600px;
+}
+.topic-container-d .featured-image2{
+  background-image: url('./../images/door.jpg');
+  background-size: cover;
+  height: 1000px;
+}
+.topic-container-d .featured-image1{
+  background-image: url('./../images/mic.jpg');
+  background-size: cover;
+  height: 700px;
+}
 .topic-container .media-body{
   margin-top: 10%;
   margin-left: 10%;
 }
 .topic-container img{
-  width: 40%;
+  width: 100%;
 }
-.blog-container {
+.blog-container, .article-container {
   max-width: 760px;
   padding: 0 20px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .blog-container img{
   width: 50%;
@@ -521,6 +548,11 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   margin-left: 25%;
   margin-top: 4%;
   margin-bottom: 2%;
+}
+@media (min-width: 1001px) {
+  .blog {
+    width: 1000px;
+  }
 }
 
 
@@ -688,7 +720,6 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
 
 /* Search Concepts */
 .search-header {
-  position: -webkit-sticky;
   position: sticky;
   top: 70px;
   background-color: #fbf9f4;
