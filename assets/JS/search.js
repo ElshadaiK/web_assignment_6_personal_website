@@ -11,17 +11,17 @@ let toggleSearchDialog = function(event) {
     }else{
         $('#search').css("visibility", "hidden");
     }
+    $(".section-search-results").load('./../../collections.html .card-text');
+    
+    // $('.search-hits').css("visibility", "visible");
+    // $(".search-hits").load('./../../posts.html .media-body');
     $("#search-query").on("keyup", search);
 // .toggle();
 }
 let search = function(){
         var value = $(this).val().toLowerCase();
-        $.get('./../../collections.html', null, function(text){
-            alert($(text).find('.card'));
-
-        })
-        // console.log(fromCollections);
-        $("#myDIV *").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
+        $(".section-search-results .card-text").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+          console.log( $(".section-search-results *").text())
 }
