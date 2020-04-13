@@ -290,6 +290,9 @@ a{
   font-size: 0.8rem;
   color: #333;
 }
+.dark .post-review{
+  color: #f8f8f2;
+}
 .post-details{
   margin-top: 8px;
   font-size: 14px;
@@ -687,7 +690,10 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   content: '\f0c1';
   text-align: center;
   font-size: 3rem;
-  color: #444;
+  color: #222;
+}
+.dark .card:hover .card-image.hover-overlay::after {
+  color: #fff;
 }
 .collections .card h5{
   font-size: .9rem;
