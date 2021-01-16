@@ -1,12 +1,13 @@
 /* Common Pages */
 
 body{
+margin-top: 100px!important;
 opacity: 1;
 visibility: visible;
 font-family: inherit;
 font-size: 1rem;
 line-height: inherit;
-color: #333;
+color: #172a3a;
 background-color: #fbf9f4;
 transition: all .2s ease-in;
 font-family: Karla,sans-serif
@@ -18,7 +19,7 @@ font-family: Karla,sans-serif
 }
 h1, h2, h3, h4, h5, h6{
   line-height: 1.25;
-  font-family: Arapey,sans-serif;
+  font-family: 'Lora', serif;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   word-break: break-word;
@@ -73,9 +74,6 @@ h3 {
 .navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active{
   color: #06805e!important;
 }
-span{
-  border-bottom: #000;
-}
 .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link .fa:visited, .navbar-light a:visited{
   color: rgba(0,0,0,.5);
 }
@@ -86,13 +84,19 @@ span{
     line-height: 27px;
   }
 }
+.container{
+  max-width: 1000px;
+}
 .fa:hover, .fab:hover {
   opacity: 1;
 }
 .fa, a, .fab{
-  color: #e13d3d;
+  color: #06805e;
   cursor: pointer;
   opacity: 0.9;
+}
+.fa.fa-graduation-cap{
+  color:rgba(0, 0, 0, 1)
 }
 .fa-search, .fa-moon{
   color: black;
@@ -114,13 +118,33 @@ footer .float-right{
   color: rgba(255,255,255,.54);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  letter-spacing: .04em;
+  color: #172a3a;
+}
+.fa-li{
+  left: -0.01em;
+  margin-top: 1.3rem;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+h1, .h1{
+  font-size: 2.7rem;
+}
 
 /* Index Page */
 
 
 body.index-body{
-  color: #333;
-  font-size: 1rem;
+  color: #172a3a;
+  font-size: 1.15rem;
+}
+body.index-body p.personal_description{
+  font-size: 1.3rem;
+  line-height: 1.7;
 }
 .main-page{
   margin-top: 50px;
@@ -134,8 +158,8 @@ body.index-body{
   position: relative;
 } 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 270px;
   margin: 0 auto;
   object-fit: cover;
 } 
@@ -149,9 +173,10 @@ body.index-body{
 }
 .profile-title{
   margin-top: 1.5rem;
+  font-family: 'Lora', serif;
 }
 .profile-title h2 {
-  font-size: 1.75em;
+  font-size: 1.85em;
   font-weight: 300;
   color: #333;
   margin: 20px 0 10px;
@@ -160,7 +185,7 @@ body.index-body{
   color: #fff;
 }
 .profile-title h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: rgba(0,0,0,.54);
   margin: 0 0 10px;
@@ -170,7 +195,7 @@ body.index-body{
 }
 .profile-title h3 a:hover, a:hover {
   text-decoration: underline;
-  color: #e13d3d;
+  color: #06805e;
 }
 ul.network-icon {
   display: inline-flex;
@@ -185,29 +210,44 @@ ul.network-icon {
   margin-right: 10px;
 }
 .big-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .description .col-lg-8{
 padding-top: 60px !important;
 padding-bottom: 50px;
 }
-p{
-  line-height: 25px;
-}
 a{
-  color: #e13d3d;
+  color: #06805e;
   text-decoration: none;
   transition: color .6s ease;
 }
 .ul-interests{
   line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 .ul-edu li{
-  list-style-type: "🎓 ";
+  list-style-type: none;
   list-style-position: outside ;
 }
+.edu_description p{
+  margin: 0;
+}
+.edu_description .course{
+  font-size: 1.3rem;
+}
+.edu_description .institution{
+  font-size: .95rem;
+  color: rgba(0,0,0,.6);
+  margin-top: 0.6em;
+}
+
 .carousel {
   position: relative;
+}
+.carousel-indicators li{
+  background-color: #06805e80;
+  opacity: 0.5;
 }
 .collection{
   padding: 110px 0;
@@ -272,24 +312,33 @@ a{
   text-align: center;
   font-weight: 10;
 }
+.works-title{
+  letter-spacing: 0.08rem!important;
+  color: #004346!important;
+  text-transform: uppercase;
+  font-weight: 500!important;
+  font-family: Karla,sans-serif!important;
+  font-size: 1.5rem;
+}
 .col-12 h5, .post-details{
   color: #888;
 }
 .post-title a{
   color: inherit;
-  font-size: 1.2em;
-  font-weight: 100;
+  font-size: 1em;
+  font-weight: 400;
 }
 .post-title a:hover{
-  color: #e13d3d;
+  color: #06805e;
   text-decoration: none;
 }
 .post-title{
   margin-top: 0em;
+  font-family: Karla,sans-serif!important;
 }
 .post-review{
   margin-top: 2px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #333;
 }
 .dark .post-review{
@@ -310,6 +359,7 @@ a{
 }
 .see-all{
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 
@@ -340,7 +390,7 @@ a{
   padding: 20px 0 20px 0;
   margin-left: 180px;
   margin-right: 160px;
-  border-bottom: 1px solid #e13d3d;
+  border-bottom: 1px solid #06805e;
 }
 .badge {
   display: inline-block;
@@ -360,16 +410,16 @@ a{
   box-shadow: .15s ease-in-out;
 }
 .border {
-  border: 1px solid #e13d3d !important;
+  border: 1px solid #06805e !important;
     padding-right: .6em;
     padding-left: .6em;
     border-radius: 10rem;
 }
 .experience .m-2 .border.exp-fill {
-  background-color: #e13d3d !important;
+  background-color: #06805e !important;
 }
 .experience .col.border-right {
-  border-color: #e13d3d !important;
+  border-color: #06805e !important;
 }
 .h-50 {
   height: 50% !important;
@@ -400,7 +450,7 @@ a{
   font-weight: 500;
 }
 .body-section.dark .card h4 a {
-  color: #e13d3d;
+  color: #06805e;
   border-bottom: solid 1px transparent;
 }
 .body-section.dark .card h4 a:hover{
@@ -429,11 +479,11 @@ a{
   color: #98a6ad;;
 }
 .btn-outline-primary {
-  color: #e13d3d;
-  border-color: #e13d3d;
+  color: #06805e;
+  border-color: #06805e;
 }
 .btn-outline-primary:hover {
-  background-color: #e13d3d;
+  background-color: #06805e;
   color: white;
   border: none;
 }
@@ -490,7 +540,7 @@ section.media-body{
 }
 .blog nav ul li a{
   color: #d03b39;
-  border: 1px solid #e13d3d;
+  border: 1px solid #06805e;
 } 
 .blog nav ul li a:hover{
   color: white;
@@ -508,7 +558,7 @@ section.media-body{
 .body-section.dark .blog nav ul li a:hover{
   color: #f8f8f2;
   background-color: #d03b39;
-  border: 1px solid #e13d3d;
+  border: 1px solid #06805e;
 }
 .blog nav ul li a:focus{
 box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
@@ -610,8 +660,8 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
 }
 .collections .btn-primary {
   color: #fff;
-  background-color: #e13d3d;
-  border-color: #e13d3d;
+  background-color: #06805e;
+  border-color: #06805e;
 }
 .collections .btn-toolbar .btn.btn-primary:active, .btn-toolbar .btn.btn-primary.active {
   box-shadow: 0 0 0 .2rem #e86969;
@@ -704,7 +754,7 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   text-transform: uppercase;
 }
 .body-section.dark .collections .card h5{
-  color: #e13d3d;
+  color: #06805e;
     border-bottom: solid 1px transparent;
 }
 .collections .card .card-text p {
