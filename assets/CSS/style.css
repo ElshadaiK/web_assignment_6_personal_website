@@ -42,17 +42,16 @@ h3 {
 }
 .navbar {
   min-height: 60px!important;
+  font-size: 1.1em;
 }
-.navbar-nav {
-  border-bottom: 2px solid #e13d3d;
-}
+
 .navbar-light{
   font-family: Karla,sans-serif;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
   box-shadow: none;
   text-transform: uppercase;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
   background: #fbf9f4!important;
 }
 .navbar-brand {
@@ -62,7 +61,7 @@ h3 {
 }
 .navbar-brand, .navbar-nav li.nav-item a.nav-link {
   color: #111;
-  font-weight: 650;
+  font-weight: 400;
 }
 .navbar-toggle {
   /* (80px - button height 34px) / 2 = 23px */
@@ -72,7 +71,10 @@ h3 {
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link .fa:hover, .navbar-light a:hover,
 .navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active{
-  color: #d03b39!important;
+  color: #06805e!important;
+}
+span{
+  border-bottom: #000;
 }
 .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link .fa:visited, .navbar-light a:visited{
   color: rgba(0,0,0,.5);
