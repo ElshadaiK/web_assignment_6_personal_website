@@ -51,7 +51,7 @@ h3 {
 }
 .navbar {
   min-height: 60px!important;
-  font-size: 1.0em;
+  font-size: 1.2rem;
 }
 
 .navbar-light{
@@ -74,7 +74,7 @@ h3 {
 }
 .navbar-nav li.nav-item a.nav-link {
   color: rgba(23, 42, 58, 0.85);
-  font-weight: 400;
+  font-weight: 600;
 }
 .navbar-toggle {
   /* (80px - button height 34px) / 2 = 23px */
@@ -83,11 +83,15 @@ h3 {
   border: none;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link .fa:hover, .navbar-light a:hover,
-.navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active{
-  color: #06805e!important;
-}
+.navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active,
 .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link .fa:visited, .navbar-light a:visited{
-  color: rgba(0,0,0,.5);
+  font-weight: 700!important;
+  color: #06805e!important;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 10px;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
 }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
