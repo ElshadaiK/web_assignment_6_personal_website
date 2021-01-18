@@ -38,6 +38,11 @@ p, li{
   color: rgba(0,0,0,.54) !important;
 
 }
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary.active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle {
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 128, 94);
+  border-color: rgb(6, 128, 94);
+}
 h3 {
   font-weight: 400;
   margin-bottom: 0.5rem;
@@ -125,14 +130,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   letter-spacing: .04em;
   color: #172a3a;
-}
-.fa-li{
-  left: -0.01em;
-  margin-top: 1.3rem;
-    position: absolute;
-    text-align: center;
-    width: 2em;
-    line-height: inherit;
 }
 h1, .h1{
   font-size: 2.7rem;
@@ -365,7 +362,7 @@ a{
 }
 
 
-/* About page */
+/* About and Resume pages */
 
 
 #about-me, #pre-contact{
@@ -377,7 +374,6 @@ a{
   background-position: 50% center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 80px;
 }
 #about-me h1, #pre-contact h1{
   color: #fff;
@@ -394,14 +390,8 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-#pre-contact{
-  padding: 60px 0 60px 0;
-}
 .mini{
-  padding: 20px 0 20px 0;
-  margin-left: 180px;
-  margin-right: 160px;
-  border-bottom: 1px solid #06805e;
+  padding: 2rem 0 0 0;
 }
 .badge {
   display: inline-block;
@@ -481,13 +471,19 @@ a{
     margin-right: 10rem;
     padding-bottom: 68px;
 }
-.section-heading{
+.section-heading h1{
   color: #333;
   font-weight: 400;
   font-size: 2rem;
 }
+.section-heading p{
+  font-size: 1.5rem;
+  word-spacing: 0.2rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
 .body-section.dark .section-heading{
-  color: #98a6ad;;
+  color: #98a6ad;
 }
 .btn-outline-primary {
   color: #06805e;
@@ -503,32 +499,39 @@ a{
   box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
 }
 .form-control{
-  height: 7%;
+  height: calc(2em + 1.25rem + 2px);
 }
 .form-control:focus{
-  border: solid #e15d5d;
-  border-width: thick;
+  box-shadow: rgb(8, 177, 130) 0px 0px 0px 0.2rem;
+  border-color: rgb(6, 128, 94);
   border-radius: 0.45em;
-  box-shadow: none;
 }
 .form-control::placeholder {
   font-weight: 500;
   font-size: 1.1rem;
 }
-.about-body .fa-ul{
-  margin-left: 0;
-}
-.about-body .fa-ul li{
-  padding-top: .8rem;
+#contact .fa-li {
+  position: absolute;
+  left: -3.14286rem;
+  width: 4rem;
+  text-align: center;
+  
+  padding-top: 0;
     margin-bottom: .3rem;
 }
+#contact .fa-ul li{
+  margin: 3rem 0 1rem 0;
+}
+
 .about-body .fa-ul li a{
   margin-left: 10px;
+  margin-top: 2rem;
+  font-size: 1.3rem
 }
-.about-body .fa-ul .fab{
+.about-body .fa-ul .fas{
   color: black;
 }
-.body-section.dark .fa-ul .fab{
+.body-section.dark .fa-ul .fas{
   color: #f8f8f2;
 }
 
@@ -675,17 +678,16 @@ box-shadow: 0 0 0 .2rem rgba(225,61,61,.25);
   border-color: #06805e;
 }
 .collections .btn-toolbar .btn.btn-primary:active, .btn-toolbar .btn.btn-primary.active {
-  box-shadow: 0 0 0 .2rem #e86969;
-  background-color: #cc1f1f !important;
+  background-color: #044f3a!important;
 }
 .collections .btn-toolbar .btn.btn-primary:hover, .btn-toolbar .btn.btn-primary:focus {
-  background-color: #e86969 !important;
+  background-color: #08b182!important;
   box-shadow: none;
 }
 .collections .btn-primary:not(:disabled):not(.disabled).active:focus, 
 .btn-primary:not(:disabled):not(.disabled):active:focus, 
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .2rem #e86969;
+  box-shadow: 0 0 0 0.2rem #08b182;
 }
 .collections .collections-container {
   display: block;
