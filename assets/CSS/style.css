@@ -426,7 +426,8 @@ a{
   height: 50% !important;
 }
 .about-body .card{
-  margin-bottom: 27px;
+  margin-bottom: 1.9rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 }
 .about-body .card-body{
   padding: 0.5rem;
@@ -435,11 +436,12 @@ a{
   background: #343a40;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
 }
 .card h4 {
-  font-size: .9rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+    font-weight: 900;
+    opacity: 0.9;
   line-height: 1.5;
 }
 .body-section.dark .card h4{
@@ -458,7 +460,8 @@ a{
   text-decoration: none;
 }
 .exp-meta{
-  font-size: 0.8rem;
+  font-size: 1rem;
+  opacity: 0.9;
   padding-top: 0.5rem;
   margin-bottom: 0.2rem;
 }
@@ -467,9 +470,10 @@ a{
 }
 #experience .mini{
     text-align: left;
-    margin-left: 10rem;
-    margin-right: 10rem;
     padding-bottom: 68px;
+}
+#experience .mini h1{
+  font-size: 3.2rem;
 }
 .section-heading h1{
   color: #333;
