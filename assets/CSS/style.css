@@ -7,7 +7,7 @@ visibility: visible;
 font-family: inherit;
 font-size: 1rem;
 line-height: inherit;
-color: #172a3a;
+color: rgb(23, 42, 58);
 background-color: rgb(240, 247, 250);;
 transition: all .2s ease-in;
 font-family: Karla,sans-serif
@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6{
   word-wrap: break-word;
   word-break: break-word;
   hyphens: manual;
+}
+p, li{
+  opacity: 0.9;
 }
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
 
@@ -43,7 +46,7 @@ h3 {
 }
 .navbar {
   min-height: 60px!important;
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 
 .navbar-light{
@@ -97,7 +100,7 @@ h3 {
 .fa, a, .fab, .fas{
   color: #06805e;
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .fa.fa-graduation-cap{
   color:rgba(0, 0, 0, 1)
@@ -186,7 +189,6 @@ body.index-body p.personal_description{
   color: #fff;
 }
 .profile-title h3 {
-  font-size: 1.1rem;
   font-weight: 300;
   color: rgba(0,0,0,.54);
   margin: 0 0 10px;
