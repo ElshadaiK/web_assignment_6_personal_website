@@ -818,7 +818,14 @@ section.media-body{
 
 }}
 
+/* Essays  */
 
+
+.blog-container p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  word-spacing: .4rem;
+}
 
 /* Search Concepts */
 
@@ -830,7 +837,7 @@ section.media-body{
 
 }
 .search-results {
-  background-color: #fbf9f4;
+  background-color: #f0f7fa;
   bottom: 0;
   left: 0;
   right: 0;
