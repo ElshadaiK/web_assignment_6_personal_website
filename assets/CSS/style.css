@@ -86,8 +86,7 @@ h3 {
   border: none;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link .fa:hover, .navbar-light a:hover,
-.navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active,
-.navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link .fa:visited, .navbar-light a:visited{
+.navbar-light .nav-link a:active, .navbar-light .nav-link .fa:active{
   font-weight: 700!important;
   color: #06805e!important;
   text-decoration: underline;
