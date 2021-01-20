@@ -8,7 +8,7 @@ let change =  function(){
         $('.body-section').toggleClass('dark');
         theme = (theme =='dark')? 'bright':'dark'
         localStorage.setItem("theme", theme);
-        $('#dark-mode').toggleClass("fa-sun");
+        $('.fa-moon').toggleClass("fa-sun");
     }
 let check = function() {
   
